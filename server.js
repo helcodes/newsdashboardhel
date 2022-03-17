@@ -8,7 +8,7 @@ const
     newsapi = require('newsapi-wrapper');
 require('dotenv').config();
 
-const port = 3000;
+const port = process.env.PORT;//3000
 //Kein externer Webserver nötig. nodejs übernimmt diese funktion
 
 const server = express();
