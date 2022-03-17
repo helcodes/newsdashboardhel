@@ -1,0 +1,35 @@
+{{> head }}
+    <body>
+        {{> nav}}
+        <main>
+            <h1>Settings</h1>
+        </main>
+
+
+        <div class="content-panel">
+            <form method="post" action="/settings">
+                <fieldset>
+                    <p>
+                        <label class="form-label" for="news-api-key">News API Key</label>
+                        <input type="text" class="text-input" id="news-api-key" name="news-api-key" value="{{newsApiKey}}"></input>
+                    </p>
+                    <p>
+                        <label class="form-label" for="news-api-category">News API Category</label>
+                        <select id="news-api-category" name="news-api-category">
+                            {{#each newsApiCategories}}
+                            <option value="{{ value }}" {{#if selected}}selected{{/if}}>{{ label }}</option>
+                            {{/each}}
+                        </select>
+                    </p>
+                </fieldset>
+                <p>
+                    <fieldset>
+                        <input type="submit" class="submit-button" value="Save"></input>
+                    </fieldset>
+                </p>
+            </form>
+        </div>
+
+
+    </body>
+</html>

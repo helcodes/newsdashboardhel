@@ -1,0 +1,13 @@
+{{> head }}
+    <body>
+        {{> nav}}
+        <main>
+            <h1>{{ heading }}</h1>
+            <ol>
+                {{#each articles}}
+                <li><a href="{{ url }}" target="_blank">{{ title }}</a></li>
+                {{/each}}
+            </ol>
+        </main>
+    </body>
+</html>

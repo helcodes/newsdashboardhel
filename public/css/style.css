@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    padding-bottom: 2em;
+}
+
+.navigation li {
+    float: left;
+    margin-right: 2em;
+    list-style: none;
+}
+
+.nav-link {
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4488ff;
+    border-radius: 3px;
+}
+
+.nav-link.active, 
+.nav-link.active:hover {
+    background-color: #ffaa44;
+}
+
+.nav-link:hover {
+    background-color: #5599ff;
+}
+
+.warning {
+    padding: 1em;
+    font-weight: bold;
+    color: #cc0000;
+    text-decoration: none;
+    background-color: #ffdd88;
+    border: 1px solid #ddbb66;
+}
